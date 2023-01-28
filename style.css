@@ -14,14 +14,15 @@ body{
 }
 
 .navbar #header .logo img{
-    height: 36px;
+    height: 76px;
     margin-left: 0px;
+    padding-top: 20px;
 }
 
 .navbar #header nav{
     display: flex;
     margin-right: 15%;
-    margin-top: 1%;
+    margin-top: 2.5%;
 }
 
 .navbar #header nav ul{
