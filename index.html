@@ -10,23 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>  
-    <!-- <nav class="navbar navbar-expand-lg bg-dark static-top">
-        <div class="container-fluid">
-            <header id="header" class="d-flex navbar-flexing">
-                <div class="logo">
-                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" class="navbar-brand" height="36" alt="" id="header-img">
-                </div>
-                <div id="nav-bar" class="container-fluid "> 
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Products</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-                    </ul>
-                </div>
-            </header>
-        </div>
-    </nav> -->
-
     <div class="navbar">
         <header id="header">
             <div class="logo">
@@ -34,27 +17,69 @@
             </div>
             <nav id="nav-bar" class="navbar-nav">
                 <ul>
-                    <li><a href="" class="nav-link">Home</a></li>
-                    <li><a href="" class="nav-link">Products</a></li>
-                    <li><a href="" class="nav-link">About</a></li>
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Products</a></li>
+                    <li><a href="#footer" class="nav-link">About</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-    <center class="hero">
-        <h2>Handcrafted, home-made masterpieces</h2>
-        <input type="email" placeholder="Enter your email address">
-        <br>
-        <button class="btn bg-secondary">GET STARTED</button>
-    
-    </center>
+    <section id="hero">
+        <center class="hero">
+            <h2>Handcrafted, home-made masterpieces</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>           
+                <input type="submit" id="submit" value="GET STARTED">
+            </form>
+        
+        </center>
+    </section>
 
-    <div style="margin-left: 50px;">
-        <i class="fa-brands fa-free-code-camp 2X"></i>
+    <section id="features">
+        <div class="grid">
+            <div class="icon">
+                <i class="fa-brands fa-free-code-camp"></i>
+            </div>
+            <div class="desc">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+        </div>
 
-    </div>
-    <div></div>
-    <div></div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+        <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="desc">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied</p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+            <div class="desc">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f9ip1iSAptQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="video"></iframe>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <span>Copyright 2023, Newton & Abraham</span>
+        </footer>
+    </section>
 </body>
 </html>

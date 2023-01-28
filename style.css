@@ -11,6 +11,7 @@ body{
 .navbar #header{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .navbar #header .logo img{
@@ -23,6 +24,7 @@ body{
     display: flex;
     margin-right: 15%;
     margin-top: 2.5%;
+    position: fixed;
 }
 
 .navbar #header nav ul{
@@ -45,7 +47,7 @@ body{
 .hero input{
     padding: 5px 80px 5px 0;
 }
-.hero .btn{
+.hero #submit{
     border: none;
     margin-top: 15px;
     padding: 5px;
@@ -82,4 +84,92 @@ body{
     nav li{
         padding-bottom: 5px;
     }
+}
+
+#features{
+    margin-top: 30px;
+}
+
+#features .grid{
+    display: flex;
+}
+
+#features .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+    font-size: 40px;
+}
+
+@media (max-width:550px){
+    #features .icon{
+        display: none;
+    }
+}
+
+#features .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+@media (max-width:550px){
+    #features .desc{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+}
+
+@media (max-width:650px){
+    #features{
+        margin-top: 0;
+    }
+}
+
+#how-it-works{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works iframe{
+    max-width: 560px;
+    width: 100%;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+footer ul li{
+    padding: 0 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer span{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    color: #444;
 }
