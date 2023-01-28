@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.navbar #header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar #header .logo img{
+    height: 36px;
+    margin-left: 0px;
+}
+
+.navbar #header nav{
+    display: flex;
+    margin-right: 15%;
+}
+
+.navbar #header nav ul{
+    list-style: none;
+}
+
+.navbar #header nav ul li{
+    display: inline;
+    padding-left: 50px;
+}
+
+.navbar #header nav ul li a{
+    text-decoration: none;
+}
