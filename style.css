@@ -38,6 +38,20 @@ body{
     text-decoration: none;
 }
 
+.hero h2{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.hero input{
+    padding: 5px 80px 5px 0;
+}
+.hero .btn{
+    border: none;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #FFA600;
+}
+
 @media (max-width: 600px){
     header{
         flex-wrap: wrap;
